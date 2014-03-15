@@ -154,6 +154,8 @@ namespace MigSharp.Providers
                     return "[datetime2]";
                 case DbType.DateTimeOffset:
                     return "[datetimeoffset]";
+                case DbType.Xml:
+                    return "[xml]";
                 default:
                     throw new ArgumentOutOfRangeException("type");
             }
